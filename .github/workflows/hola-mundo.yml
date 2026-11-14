@@ -4,11 +4,6 @@ jobs:
   hola-mundo:
     runs-on: ubuntu-latest
     steps:
-      - name: Public IP
-        id: ip
-        uses: haythem/public-ip@v1.3
-      - name: hola mundo
-        run: echo ¡Hola Mundo desde ${{ steps.ip.outputs.ipv4 }}!
       - name: Checkout
         uses: actions/checkout@v6.1.0
       - name: main.py
